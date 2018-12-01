@@ -1,7 +1,12 @@
 {
-  "name": "vuepressBlog",
+  "name": "myBlogDev",
+  "short_name": "张三",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#2196f3",
   "version": "1.0.0",
-  "description": "",
+  "description": "若谷个人博客",
+  "theme_color": "blue",
   "main": "index.js",
   "scripts": {
     "start": "vuepress dev docs",
@@ -9,10 +14,26 @@
     "build": "vuepress build docs",
     "deploy": "deploy.sh"
   },
+  "icons": [
+    {
+      "src": "./photo.jpg",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "vuepress": "^0.14.4"
-  }
+  },
+  "related_applications": [
+    {
+      "platform": "web"
+    },
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+    }
+  ]
 }

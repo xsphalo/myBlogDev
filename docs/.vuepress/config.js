@@ -1,14 +1,15 @@
 module.exports = {
-  title: '个人主页',
+  title: '若谷的博客',
   description: 'Personal Website',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', { rel: 'icon', href: '/images/photo.jpg' }],
+    ['link', { rel: 'icon', href: 'https://avatars0.githubusercontent.com/u/30809948?s=460&v=4' }],
     ['link', { rel: 'manifest', href: '/images/photo.jpg' }],
-    ['link', { rel: 'apple-touch-icon', href: '/images/photo.jpg' }],
+    ['link', { rel: 'apple-touch-icon', href: 'https://avatars0.githubusercontent.com/u/30809948?s=460&v=4' }],
     ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache'}],
     ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache,must-revalidate'}],
     ['meta', { 'http-quiv': 'expires', cotent: '0'}]
   ],
+  // port: '8080',
   serviceWorker: true, // 是否开启 PWA
   base: '/', // 部署到github相关的配置
   markdown: {
@@ -16,40 +17,28 @@ module.exports = {
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      // {text: '前端基础', link: '/accumulate/' },
-      // {text: '算法题库', link: '/algorithm/'},
-      // {text: '诗和远方', link: '/others/'},
-      // {text: '微博', link: 'https://baidu.com'}      
+      {text: '技术人生', link: '/techlife/' },
+      {text: '远方的我', link: '/myfuture/'}
     ],
-    // sidebar:{
-    //   '/accumulate/': [
-    //       {
-    //         title: '前端积累',
-    //         children: [
-    //           '/accumulate/1.html',
-    //           '/accumulate/2.html',
-    //           '/accumulate/3.html',
-    //           '/accumulate/4.html',
-    //           '/accumulate/5.html',
-    //           '/accumulate/6.html',
-    //           '/accumulate/7.html',
-    //           '/accumulate/8.html',
-    //           '/accumulate/9.html',
-    //           '/accumulate/10.html',
-    //           '/accumulate/11.html',
-    //         ]
-    //       }
-    //     ],
-    //     '/algorithm/': [
-    //       '/algorithm/', 
-    //       {
-    //         title: '第二组侧边栏下拉框的标题1',
-    //         children: [
-    //           '/algorithm/' 
-    //         ]
-    //       }
-    //     ]
-    // },
+    sidebar:{
+      '/techlife/': [
+          {
+            title: '技术人生',
+            children: [
+              
+            ]
+          }
+        ],
+        '/myfuture/': [
+          '/myfuture/', 
+          {
+            title: '远方的我',
+            children: [
+              
+            ]
+          }
+        ]
+    },
     sidebar: 'auto', // 侧边栏配置
     sidebarDepth: 2
   }
