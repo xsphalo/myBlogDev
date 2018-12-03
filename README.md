@@ -12,7 +12,10 @@ $ yarn  # or npm install
 
 # Run
 $ yarn dev  # or npm run dev
-```
+
+# Deving_Watch
+$ yarn  dev # or npm run dev
+
 # Deploy
 $ yarn deploy  # or npm run deploy
-Check your site at `http://127.0.0.1:8080/`
+```
