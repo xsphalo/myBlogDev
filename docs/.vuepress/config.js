@@ -1,10 +1,11 @@
+const avatar = 'https://avatars0.githubusercontent.com/u/30809948?s=460&v=4';
 module.exports = {
   title: "若谷的博客 | Halo.X Blog",
   description: "种一棵树最好的时间是在十年前，其次是现在",
   head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', { rel: 'icon', href: 'https://avatars0.githubusercontent.com/u/30809948?s=460&v=4' }],
-    ['link', { rel: 'manifest', href: '/images/photo.jpg' }],
-    ['link', { rel: 'apple-touch-icon', href: 'https://avatars0.githubusercontent.com/u/30809948?s=460&v=4' }],
+    ['link', { rel: 'icon', href: avatar }],
+    ['link', { rel: 'manifest', href: avatar }],
+    ['link', { rel: 'apple-touch-icon', href: avatar }],
     ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache'}],
     ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache,must-revalidate'}],
     ['meta', { 'http-quiv': 'expires', cotent: '0'}]
