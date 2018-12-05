@@ -11,18 +11,20 @@ module.exports = {
     ['meta', { 'http-quiv': 'expires', cotent: '0'}]
   ],
   base: "/",// 部署到github相关的配置
-  dest: "./dist",
+  dest: "./dist",// 打包存放目录
   serviceWorker: true, // 是否开启 PWA
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
+      { text: "点滴", link: "/condots/" },
       { text: "技术人生", link: "/technical/" },
       { text: "诗意人生", link: "/poetry/" },
       { text: "GitHub", link: "https://github.com/xsphalo" }
     ],
     sidebar: {
       '/technical/': genSidebarConfigTechnical('技术人生'),
-      '/poetry/': genSidebarConfigPoetry('诗意人生')
+      '/poetry/': genSidebarConfigPoetry('诗意人生'),
+      '/condots/': genSidebarConfigCondots('点滴')
     },
     lastUpdated: 'Last Updated',
     // sidebar: 'auto', // 侧边栏配置
@@ -38,7 +40,18 @@ module.exports = {
     }
   }
 };
-
+function genSidebarConfigCondots (title) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        '',
+        'condots',
+      ]
+    }
+  ]
+}
 function genSidebarConfigPoetry (title) {
   return [
     {
