@@ -14,14 +14,14 @@ module.exports = {
   serviceWorker: true, // 是否开启 PWA
   themeConfig: {
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Projects", link: "/projects/" },
-      { text: "Guide", link: "/guide/" },
+      { text: "首页", link: "/" },
+      { text: "技术人生", link: "/technical/" },
+      { text: "诗意人生", link: "/poetry/" },
       { text: "GitHub", link: "https://github.com/xsphalo" }
     ],
     sidebar: {
-      '/guide/': genSidebarConfig('Guide'),
-      '/projects/': genSidebarConfigtwo('Projects')
+      '/technical/': genSidebarConfigTechnical('技术人生'),
+      '/poetry/': genSidebarConfigPoetry('诗意人生')
     },
     lastUpdated: 'Last Updated',
     // sidebar: 'auto', // 侧边栏配置
@@ -38,7 +38,7 @@ module.exports = {
   }
 };
 
-function genSidebarConfig (title) {
+function genSidebarConfigPoetry (title) {
   return [
     {
       title,
@@ -52,15 +52,16 @@ function genSidebarConfig (title) {
     }
   ]
 }
-function genSidebarConfigtwo (title) {
+function genSidebarConfigTechnical (title) {
   return [
     {
       title,
       collapsable: false,
       children: [
         '',
+        ['./js/jsbasic1', 'JavaScript基础'],
         ['old', 'oldPage'],
-      ['new', 'newPage']
+        ['new', 'newPage']
       ]
     }
   ]
