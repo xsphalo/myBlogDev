@@ -59,7 +59,11 @@ function genSidebarConfigTechnical (title) {
       collapsable: false,
       children: [
         '',
-        ['./js/jsbasic1', 'JavaScript基础'],
+        ['./js/jsbasic1', 'JavaScript'],
+        ['./node/node', 'Node'],
+        ['./vue/vue', 'Vue'],
+        ['./html/html', 'HTML'],
+        ['./css/css', 'CSS'],
         ['old', 'oldPage'],
         ['new', 'newPage']
       ]
